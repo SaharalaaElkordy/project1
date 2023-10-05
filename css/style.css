@@ -1,0 +1,350 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    background-color:black;
+    position: fixed;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 30;
+}
+.img1{
+    float: left;
+    margin-left: 100;
+   
+}
+.list{
+    list-style-type: none;
+}
+.list li{
+    float: right;
+   display: inline-block;
+    margin:10 40;
+   font-size: 20; 
+}
+.list li a{
+    text-decoration: none;
+    color: white;
+} 
+/*.................................................................................................................*/
+.sec1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/OIP\ \(1\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.overlay1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0, 0.6);
+}
+.content1{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.titlesec{
+    font-size: 55;
+    color: white;
+}
+.psec{
+    color: white;
+    letter-spacing: 2px;
+    margin: 15px 0px;
+}
+.btn{
+font-size: 19px;
+border-radius: 5px;
+border: 0px;
+margin-right: 12px;
+padding:18px 20px;
+}
+.btn2{
+    color: white;
+    background-color: blue;
+}
+.btn:hover{
+    background-color:rgb(88, 88, 88);
+}
+/*..........................................................................................................*/
+.sec2{
+    width: 100%;
+    height: 70vh;
+position: relative;
+}
+.h1sec2{
+    text-align: center;
+   }
+.d1{
+    width: 50;
+    height: 4;
+    background-color: rgb(82, 93, 236);
+    margin: auto;
+    margin-top: 7;
+}
+.contener{
+  width: 80%;
+  margin: auto;  
+  overflow: auto;
+}
+.d2con{
+    position: relative;
+    width: 300;
+    height: 150;
+    text-align: center;
+float: left;
+ margin: 50px 50px;
+  border: 1px solid gray;
+}
+
+.a{
+    color: rgb(80, 150, 225);
+    font-size: 20;
+    margin: 15 0;
+}
+.pcon{ 
+    margin: 10 0;
+    letter-spacing: 2;
+    color: gray;
+}
+.acon{ 
+    text-decoration: none;
+    color: rgb(80, 150, 225);
+}
+  .d2con::after{
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 0;
+  left:0;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  transition: 0.5s;
+  }
+  .d2con:hover::after{
+width: 100%;
+height: 100%;
+opacity: 0.5;
+}
+
+
+
+/*...........................................................................*/
+.sec3{
+    width: 100%;
+    height: 130vh;
+    background-color: rgb(228, 227, 227); 
+  
+}
+.h1sec3{
+    text-align: center;
+}
+.d2sec3{
+    width: 50;
+    height: 4;
+    background-color: rgb(82, 93, 236);
+    margin: auto;
+    margin-top: 7;
+}
+.contenersec3{
+    width: 80%;
+  margin: auto;
+  overflow: auto;
+   
+}
+.imgsec3{
+    position: relative;
+    float: left;
+width: 250;
+background-color: white ; 
+margin: 70;
+text-align: center;
+}
+.sec3overlay{
+position: absolute;
+top:0;
+background-color: rgba(0, 0, 0, 0.7);
+width: 100%;
+height: 100%;
+visibility: hidden;
+opacity: 0; 
+transition:1s ;
+}
+.imgsec3:hover .sec3overlay{
+    opacity: 0.7;
+    visibility : visible;
+}
+.pover3{
+    color: rgb(180, 180, 227);
+    margin-top: 70;
+}
+.o3{
+    color: rgb(123, 123, 144);
+    font-size: 20;
+}
+.p2over3{
+    color: white;
+}
+/*....................................................................................................*/
+ .sec4{
+    width: 100%;
+    height: 80vh;
+    background-color:white; 
+  
+}
+.h1sec4{
+    text-align: center;
+}
+.d2sec4{
+    width: 50;
+    height: 4;
+    background-color: rgb(82, 93, 236);
+    margin: auto;
+    margin-top: 7;
+}
+.contenersec4{
+    width: 80%;
+  margin: auto;
+  overflow: auto;
+   
+}
+.offersec4{
+    float: left;
+width: 300;
+height: 100;
+background-color: white ; 
+margin: 30px;
+text-align: center;
+overflow: auto;
+border: 1px solid gray;
+position: relative;
+padding: 15;
+}
+.o{
+    position: absolute;
+    font-size: 30;
+    color: rgb(74, 129, 216);
+    margin-left: -140;
+    margin-top: 2;
+}
+.poffer{ 
+    margin: 10 0;
+    letter-spacing: 2;
+    color: gray;
+}
+.h2offer{
+    font-size: smaller;
+}
+.offersec4::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    transition: 0.5s;
+    }
+    .offersec4:hover::after{
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  }
+ 
+/*......................................................................*/
+.sec5{
+    width: 100%;
+    height: 80vh;
+    background-color:rgb(222, 220, 220);  
+}
+.countersec5{
+    width: 80%;
+    margin: auto;
+    overflow: auto; 
+}
+.imgsec5{
+    float: right;
+    width: 40%;
+    margin: 100 0;
+    background-color: white;
+    text-align: center;
+    height: 270;
+}
+.choosesec5{
+    float: left;
+    width: 60%;
+}
+.d2sec5{
+    width: 50;
+    height: 4;
+    background-color: rgb(82, 93, 236);
+    margin:50 10;
+    margin-top: 7;
+}
+.ch{
+    color: rgb(97, 148, 244);
+}
+.sp{
+  color: gray; 
+  letter-spacing: 2; 
+}
+.psec5{
+    color: gray;
+    letter-spacing: 2;
+}
+/*........................................................................................*/
+.end{
+    width: 100%;
+    height: 40vh;
+    background-color: gray;
+    text-align: center;
+
+}
+.e{
+    font-size: 30;
+    color: rgb(5, 39, 99);
+    margin: 5 5;
+}
+.pend{
+    font-size: smaller;
+    color: rgb(65, 63, 63);
+}
+.imend{
+    margin: 50 0 0 0  ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
